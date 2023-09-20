@@ -9,7 +9,7 @@ function PostCard({ post }) {
             </h3>
             <p>{post.body}</p>
 
-            <button onClick={() => { alert('Alert with client') }}>
+            <button>
                 Click
             </button>
         </div>
