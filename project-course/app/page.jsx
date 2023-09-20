@@ -1,3 +1,12 @@
+import User from "../components/User";
+
 export default function HomePage() {
-    return <h1>Hello World!!!</h1>
+    // server component
+    return (
+        <>
+            {/* client component */}
+            <h1>Hello World!!!</h1>
+            <User />
+        </>
+    )
 }
