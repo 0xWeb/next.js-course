@@ -1,4 +1,5 @@
-import PostPages from '../page'
+import Posts from '../page'
+import { Suspense } from 'react'
 
 
 async function loadPost(id) {
@@ -24,7 +25,13 @@ async function Page({ params }) {
 
             <h2>Other Posts</h2>
 
-            <PostPages />
+            <Suspense fallback={
+                <div>
+                    Loading other posts...
+                </div>
+            }>
+                <Posts />
+            </Suspense>
         </div>
     )
 }
