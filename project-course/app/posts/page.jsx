@@ -1,5 +1,4 @@
-import PostCard from "../../components/PostCard";
-import { Suspense } from "react";
+import PostCard from '@/com'
 
 async function loadPosts() {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
