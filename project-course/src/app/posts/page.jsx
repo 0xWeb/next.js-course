@@ -1,4 +1,4 @@
-import PostCard from '@/com'
+import PostCard from '../../components/PostCard'
 
 async function loadPosts() {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')

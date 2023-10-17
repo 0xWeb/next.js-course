@@ -4,9 +4,7 @@ import { useEffect } from "react";
 
 function User() {
 
-    useEffect(() => {
-        alert('Use Client component')
-    }, [])
+
 
 
     return (

@@ -1,13 +1,16 @@
+"use client"
 import Link from 'next/link'
 
+
 function Navbar() {
+
     return (
         <>
-            <nav>
-                <h1>
+            <nav className='flex p-10 bg-slate-600 items-center justify-between'>
+                <h1 className='text-5xl font-bold'>
                     Navbar
                 </h1>
-                <ul>
+                <ul style={{ display: 'flex', gap: 30 }}>
                     <li>
                         <Link href={"/"}>Home</Link>
                     </li>
@@ -16,6 +19,9 @@ function Navbar() {
                     </li>
                     <li>
                         <Link href={"/shop"}>Shop</Link>
+                    </li>
+                    <li>
+                        <Link href={"/posts"}>Posts</Link>
                     </li>
                 </ul>
             </nav>

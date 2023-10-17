@@ -1,4 +1,4 @@
-import Posts from '@/'
+import Posts from '../page'
 import { Suspense } from 'react'
 
 
